@@ -13,14 +13,14 @@ const asignarNumero = (numero) => {
 
 
 //La variable "OP" en la funcion "opereta" obtiene valor directamente de los atributos "opereta" de los botones en el HTML
-function opereta(op) {
+function opereta(opAritmeticos) {
 // Verifica si no hay ningún número ingresado actualmente
     if (numeroActual === '') return;
 // Verifica si ya hay un numero anterior y realiza el calculo si es asi
     if (numeroAnterior !== '') {
         calculo();
     }
-    operacion = op;
+    operacion = opAritmeticos;
     numeroAnterior = numeroActual;
 // Reinicia el numero actual dejandolo vacio para el siguiente ingreso    
     numeroActual = '';
