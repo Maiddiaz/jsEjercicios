@@ -6,7 +6,7 @@ let operacion = null;
 //La variable numero en la funcipn asignarNumero obtiene valor directamente de los atributos onclick de los botones en el HTML
 const asignarNumero = (numero) => {
 
-    numeroActual += numero;
+    numeroActual = numero;
 
     actualizarDisplay();
 }
